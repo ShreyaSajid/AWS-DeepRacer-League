@@ -14,10 +14,16 @@ The following links provide a detailed specifications to configure your first ca
 - [Build Your First AWS DeepRacer Model](https://codingnconcepts.com/aws/aws-deepracer/)
 - [AWS DeepRacer: Driven by Reinforcement Learning - Online Course](https://www.aws.training/Details/eLearning?id=32143)
 
-## Reward Function
-Reinforcement learning (RL) is an area of machine learning concerned with how an agents should take actions in an environment in order to maximize the notion of cumulative reward. Reward function is a python function where you give higher reward points for good behavior and lower reward points for bad behavior.
+## In this repository...
+In this repository, I have included a set of sample reward functions, log analysis notebooks and racing line computations that helped me during my experience at the AWS DeepRacer League '21.
 
-## Log Analysis
-Log analysis is using a Jupyter notebook to analyze and debug models based on log data generated from the AWS DeepRacer simulation and training environment. With snippets of Python code, you can plot and visualize your model’s training performance through various graphs and heatmaps.
+### Reward Function
+Reinforcement learning (RL) is an area of machine learning concerned with how an agents should take actions in an environment in order to maximize the notion of cumulative reward. Reward function is a python function where you give higher reward points for good behavior and lower reward points for bad behavior. Different approaches could be used and altered according to the environment and action space specified.
 
-In this repository, I have included a set of sample reward functions and log analysis notebooks that helped me during my experience at the AWS DeepRacer League '21.
+### Log Analysis
+We could use a Jupyter notebook to analyze and debug models based on log data generated from the AWS DeepRacer simulation and training environment. With snippets of Python code, you can plot and visualize your model’s training performance through various graphs and heatmaps.
+
+### Optimal Racing Line
+Watching hours of motorsport taught me that another way to accelerate your agent's performance would be to train it using an optimal racing path. This could be done by using custom waypoints or coordinates. Here, we calculate a race line around the Monaco track. There are 33 other tracks available, and can be specified according to the requirement. 
+
+
