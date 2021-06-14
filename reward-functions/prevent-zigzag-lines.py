@@ -1,6 +1,6 @@
 def reward_function(params):
     '''
-    Example of penalize steering, which helps mitigate zig-zag behaviors
+    Example to penalize an incorrect steering angle, which helps mitigate zig-zag behaviors
     '''
     
     # Read input parameters
@@ -26,7 +26,7 @@ def reward_function(params):
     # Steering penality threshold, change the number based on your action space setting
     ABS_STEERING_THRESHOLD = 15 
 
-    # Penalize reward if the car is steering too much
+    # Penalize if the car is steering too much
     if steering > ABS_STEERING_THRESHOLD:
         reward *= 0.8
 
